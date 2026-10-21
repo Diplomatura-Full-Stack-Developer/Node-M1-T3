@@ -16,6 +16,18 @@ Definir rutas RESTful y utilizar Postman para probarlas.
 
 ### Capturas de pantallas:
 
+![Welcome](./assets/Welcome.png)
+
+![Get Products](./assets/GetAllProducts.png)
+
+![Get Product by ID](./assets/GetProductById.png)
+
+![Create Product](./assets/CreateProduct.png)
+
+![Delete Product](./assets/DeleteProductById.png)
+
+![Update Product](./assets/UpdateProductById.png)
+
 ### Pasos para la ejecución local:
 
 1. Clonar el repositorio:
@@ -33,14 +45,15 @@ npm install
 3. Ejecutar el script:
 
 ```bash
-node app.js
+node server.js
 ```
 
 ### Recursos utilizados:
 
 - Node JS - Versión 24.20.0 ([https://nodejs.org/es/download/](https://nodejs.org/es/download/))
 - Npm - Versión 12.0.2 (instalado por defecto con Node JS)
-- Chalk - Versión 6.0.1 ([https://www.npmjs.com/package/chalk](https://www.npmjs.com/package/chalk))
+- Express - Versión 5.3.0 ([https://www.npmjs.com/package/express](https://www.npmjs.com/package/express))
+- Postman - Versión 12.33.2 ([https://www.postman.com/](https://www.postman.com/))
 
 ### Alumno: Rubén Seco
 
