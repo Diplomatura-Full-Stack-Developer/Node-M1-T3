@@ -4,9 +4,9 @@
 
 ### Módulo 1: Node JS
 
-### Unidad 1: ExpressJS
+### Unidad 2: ExpressJS
 
-### Tarea 1: Mi primer API REST con Express
+### Tarea 2: Mi primer API REST con Express
 
 ### Objetivos:
 
