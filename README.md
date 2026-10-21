@@ -14,6 +14,15 @@ Aprender a instalar y configurar un proyecto con Express.
 
 Definir rutas RESTful y utilizar Postman para probarlas.
 
+### Consideraciones:
+
+- Se crea un servidor con Express y se definen las rutas RESTful para el manejo de productos.
+- Se crea un archivo products.json para almacenar los productos.
+- Se crea un archivo server.js para el servidor.
+- Se crea un archivo controller.js donde se implementan las rutas RESTful para el manejo de productos.
+- Se crea un archivo service.js donde se implementan las funciones para el manejo de productos, con el objetivo de abstraer la lógica de negocio.
+- Se utiliza Postman para probar las rutas.
+
 ### Capturas de pantallas:
 
 ![Welcome](./assets/Welcome.png)
