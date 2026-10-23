@@ -1,13 +1,19 @@
 const express = require("express");
 const router = require("./controller");
+const connectToMongoDB = require("./dbconnection");
+
 
 const app = express();
-const port = 3000;
 
 app.use(express.json());
-app.use(router);
 
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
-});
+initServer = async () => {
+  await connectToMongoDB();
+  app.use(router);
+  app.listen(process.env.PORT, () => {
+    console.log(`Server is running on port ${process.env.PORT}`);
+  });
+}
 
+
+initServer();

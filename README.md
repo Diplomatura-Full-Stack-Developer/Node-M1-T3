@@ -4,15 +4,15 @@
 
 ### Módulo 1: Node JS
 
-### Unidad 2: ExpressJS
+### Unidad 3: MongoDB
 
-### Tarea 2: Mi primer API REST con Express
+### Tarea 3: Integrando Mongoose en mi API.
 
 ### Objetivos:
 
-Aprender a instalar y configurar un proyecto con Express.
+Conectar la API en Express a una base de datos MongoDB utilizando Mongoose.
 
-Definir rutas RESTful y utilizar Postman para probarlas.
+Definir un esquema y realizar operaciones CRUD básicas.
 
 ### Consideraciones:
 
@@ -25,24 +25,12 @@ Definir rutas RESTful y utilizar Postman para probarlas.
 
 ### Capturas de pantallas:
 
-![Welcome](./assets/Welcome.png)
-
-![Get Products](./assets/GetAllProducts.png)
-
-![Get Product by ID](./assets/GetProductById.png)
-
-![Create Product](./assets/CreateProduct.png)
-
-![Delete Product](./assets/DeleteProductById.png)
-
-![Update Product](./assets/UpdateProductById.png)
-
 ### Pasos para la ejecución local:
 
 1. Clonar el repositorio:
 
 ```bash
-git clone https://github.com/Diplomatura-Full-Stack-Developer/Node-M1-T2
+git clone https://github.com/Diplomatura-Full-Stack-Developer/Node-M1-T3
 ```
 
 2. Instalar las dependencias:
@@ -62,7 +50,8 @@ node server.js
 - Node JS - Versión 24.20.0 ([https://nodejs.org/es/download/](https://nodejs.org/es/download/))
 - Npm - Versión 12.0.2 (instalado por defecto con Node JS)
 - Express - Versión 5.3.0 ([https://www.npmjs.com/package/express](https://www.npmjs.com/package/express))
-- Postman - Versión 12.33.2 ([https://www.postman.com/](https://www.postman.com/))
+- Mongoose - Versión 9.11.3 ([https://www.npmjs.com/package/mongoose](https://www.npmjs.com/package/mongoose))
+<!-- - MongoDB - Versión 7.0.0 ([https://www.mongodb.com/](https://www.mongodb.com/)) -->
 
 ### Alumno: Rubén Seco
 
