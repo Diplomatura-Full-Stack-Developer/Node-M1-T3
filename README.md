@@ -22,7 +22,7 @@ Definir un esquema y realizar operaciones CRUD básicas.
 - Se puede acceder a la base de datos MongoDB utilizando MongoDB Compass.
 - Se crea un archivo model.js para el esquema de los productos.
 - Se crea un archivo .env.template para las variables de entorno.
-- Se crea un archivo routes.js para las rutas de la API.
+- Se crea un archivo router.js para las rutas de la API.
 - Se crea un archivo controller.js donde se implementan las rutas RESTful para el manejo de productos.
 - Se crea un archivo service.js donde se implementan las funciones para el manejo de productos, con el objetivo de abstraer la lógica de negocio.
 - Se pueden cargar datos en base desde el archivo products.json. De cualquier manera, la base de datos se creará de forma automática al crear un primer producto.
@@ -30,6 +30,20 @@ Definir un esquema y realizar operaciones CRUD básicas.
 - Se utiliza Postman para probar las rutas.
 
 ### Capturas de pantallas:
+
+![MongoDB Compass](./assets/MongoDBCompass.png)
+
+![Welcome](./assets/Welcome.png)
+
+![Get Products](./assets/GetAllProducts.png)
+
+![Get Product by ID](./assets/GetProductById.png)
+
+![Create Product](./assets/CreateProduct.png)
+
+![Delete Product](./assets/DeleteProductById.png)
+
+![Update Product](./assets/UpdateProductById.png)
 
 ### Pasos para la ejecución local:
 
