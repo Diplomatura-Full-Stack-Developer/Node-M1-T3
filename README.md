@@ -31,7 +31,7 @@ Definir un esquema y realizar operaciones CRUD básicas.
 
 ### Capturas de pantallas:
 
-![MongoDB Compass Connection](./assets/MongoDBCompass.png)
+![MongoDB Compass Connection](./assets/MongoDbCompass.png)
 
 ![Welcome](./assets/Welcome.png)
 
