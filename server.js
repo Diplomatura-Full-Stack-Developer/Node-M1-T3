@@ -1,5 +1,5 @@
 const express = require("express");
-const router = require("./controller");
+const router = require("./router");
 const connectToMongoDB = require("./dbconnection");
 
 

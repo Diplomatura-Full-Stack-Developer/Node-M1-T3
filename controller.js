@@ -1,44 +1,57 @@
-const express = require("express");
-const { getProducts, getProductById, createProduct, deleteProduct, updateProduct } = require("./service");
+const service = require("./service");
 
-const router = express.Router();
-
-
-router.get("/", (req, res) => {
+const welcomeProductAPI = (req, res) => {
   res.status(200).json({ message: "Bienvenido a la API de productos" });
-});
+};
 
-router.get("/products", (req, res) => {
-  const products = getProducts();
-  res.status(200).json({
-    message: "Productos obtenidos correctamente",
-    data: products,
-  });
-});
+const getProducts = async (req, res) => {
+  try {
+    const products = await service.getProducts();
+    res.status(200).json(products);
+  } catch (error) {
+    res.status(500).json({ message: "Error al obtener los productos", data: null });
+  }
+};
 
-router.get("/products/:id", (req, res) => {
+const getProductById = async (req, res) => {
   const { id } = req.params;
-  const product = getProductById(id);
-  res.status(200).json({ product });
-});
+  try {
+    const product = await service.getProductById(id);
+    res.status(200).json(product);
+  } catch (error) {
+    res.status(500).json({ message: "Error al obtener el producto", data: null });
+  }
+};
 
-router.post("/product", (req, res) => {
+const createProduct = async (req, res) => {
   const { name, price } = req.body;
-  const product = createProduct(name, price);
-  res.status(200).json({ product });
-});
+  try {
+    const product = await service.createProduct(name, price);
+    res.status(200).json(product);
+  } catch (error) {
+    res.status(500).json({ message: "Error al crear el producto", data: null });
+  }
+};
 
-router.put("/product/:id", (req, res) => {
+const updateProductById = async (req, res) => {
   const { id } = req.params;
   const { name, price } = req.body;
-  const product = updateProduct(id, name, price);
-  res.status(200).json({ product });
-});
+  try {
+    const product = await service.updateProductById(id, name, price);
+    res.status(200).json(product);
+  } catch (error) {
+    res.status(500).json({ message: "Error al actualizar el producto", data: null });
+  }
+};
 
-router.delete("/product/:id", (req, res) => {
+const deleteProductById = async (req, res) => {
   const { id } = req.params;
-  const product = deleteProduct(id);
-  res.status(200).json({ product });
-});
+  try {
+    const product = await service.deleteProductById(id);
+    res.status(200).json(product);
+  } catch (error) {
+    res.status(500).json({ message: "Error al eliminar el producto", data: null });
+  }
+};
 
-module.exports = router;
+module.exports = { welcomeProductAPI, getProducts, getProductById, createProduct, updateProductById, deleteProductById };
