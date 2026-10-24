@@ -17,10 +17,16 @@ Definir un esquema y realizar operaciones CRUD básicas.
 ### Consideraciones:
 
 - Se crea un servidor con Express y se definen las rutas RESTful para el manejo de productos.
-- Se crea un archivo products.json para almacenar los productos.
 - Se crea un archivo server.js para el servidor.
+- Se crea un archivo dbconnection.js para la conexión a la base de datos MongoDB.
+- Se puede acceder a la base de datos MongoDB utilizando MongoDB Compass.
+- Se crea un archivo model.js para el esquema de los productos.
+- Se crea un archivo .env.template para las variables de entorno.
+- Se crea un archivo routes.js para las rutas de la API.
 - Se crea un archivo controller.js donde se implementan las rutas RESTful para el manejo de productos.
 - Se crea un archivo service.js donde se implementan las funciones para el manejo de productos, con el objetivo de abstraer la lógica de negocio.
+- Se pueden cargar datos en base desde el archivo products.json. De cualquier manera, la base de datos se creará de forma automática al crear un primer producto.
+- Con la division de responsabilidades de los archivos creados, se logra una arquitectura limpia y mantenible.
 - Se utiliza Postman para probar las rutas.
 
 ### Capturas de pantallas:
@@ -51,7 +57,7 @@ node server.js
 - Npm - Versión 12.0.2 (instalado por defecto con Node JS)
 - Express - Versión 5.3.0 ([https://www.npmjs.com/package/express](https://www.npmjs.com/package/express))
 - Mongoose - Versión 9.11.3 ([https://www.npmjs.com/package/mongoose](https://www.npmjs.com/package/mongoose))
-<!-- - MongoDB - Versión 7.0.0 ([https://www.mongodb.com/](https://www.mongodb.com/)) -->
+- MongoDB Compass - Versión 1.40.4 ([https://www.mongodb.com/es/products/compass](https://www.mongodb.com/es/products/compass))
 
 ### Alumno: Rubén Seco
 
