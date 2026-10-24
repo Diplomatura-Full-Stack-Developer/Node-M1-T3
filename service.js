@@ -20,7 +20,7 @@ const getProducts = async () => {
       })),
     };
   } catch (error) {
-    throw new Error("Error al obtener los productos");
+    throw new Error("Error al obtener los productos: " + error.message);
   }
 };
 
@@ -29,7 +29,7 @@ const getProductById = async (id) => {
   try {
     const product = await Product.findOne({ id });
     if (!product) {
-      throw new Error("Producto no encontrado");
+      throw new Error("Producto no encontrado: " + id);
     }
     return {
       message: "Producto obtenido correctamente",
@@ -40,7 +40,7 @@ const getProductById = async (id) => {
       },
     };
   } catch (error) {
-    throw new Error("Error al obtener el producto");
+    throw new Error("Error al obtener el producto: " + error.message);
   }
 };
 
@@ -63,7 +63,7 @@ const createProduct = async (name, price) => {
       },
     };
   } catch (error) {
-    throw new Error("Error al crear el producto");
+    throw new Error("Error al crear el producto: " + error.message);
   }
 };
 
@@ -72,7 +72,7 @@ const updateProductById = async (id, name, price) => {
   try {
     const product = await Product.findOneAndUpdate({ id }, { name, price });
     if (!product) {
-      throw new Error("Error al actualizar el producto");
+      throw new Error("Error al actualizar el producto: " + id);
     }
     return {
       message: "Producto actualizado correctamente",
@@ -83,7 +83,7 @@ const updateProductById = async (id, name, price) => {
       },
     };
   } catch (error) {
-    throw new Error("Error al actualizar el producto");
+    throw new Error("Error al actualizar el producto: " + error.message);
   }
 };
 
@@ -92,7 +92,7 @@ const deleteProductById = async (id) => {
     const product = await Product.findOneAndDelete({ id });
     if (!product) {
       return {
-        message: "Error al eliminar el producto",
+        message: "Error al eliminar el producto: " + id,
         data: null,
       };
     }
@@ -105,7 +105,7 @@ const deleteProductById = async (id) => {
       },
     };
   } catch (error) {
-    throw new Error("Error al eliminar el producto");
+    throw new Error("Error al eliminar el producto: " + error.message);
   }
 };
 
