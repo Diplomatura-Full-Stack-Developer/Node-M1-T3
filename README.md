@@ -25,7 +25,7 @@ Definir un esquema y realizar operaciones CRUD básicas.
 - Se crea un archivo router.js para las rutas de la API.
 - Se crea un archivo controller.js donde se implementan las rutas RESTful para el manejo de productos.
 - Se crea un archivo service.js donde se implementan las funciones para el manejo de productos, con el objetivo de abstraer la lógica de negocio.
-- Se pueden cargar datos en base desde el archivo products.json. De cualquier manera, la base de datos se creará de forma automática al crear un primer producto.
+- Se pueden cargar datos en base desde el archivo assets/data/products.json. De cualquier manera, la base de datos se creará de forma automática al crear un primer producto.
 - Con la division de responsabilidades de los archivos creados, se logra una arquitectura limpia y mantenible.
 - Se utiliza Postman para probar las rutas.
 
@@ -62,7 +62,7 @@ npm install
 3. Ejecutar el script:
 
 ```bash
-node server.js
+npm run dev
 ```
 
 ### Recursos utilizados:
