@@ -16,18 +16,18 @@ Definir un esquema y realizar operaciones CRUD básicas.
 
 ### Consideraciones:
 
-- Se crea un servidor con Express y se definen las rutas RESTful para el manejo de productos.
-- Se crea un archivo server.js para el servidor.
-- Se crea un archivo dbconnection.js para la conexión a la base de datos MongoDB.
-- Se puede acceder a la base de datos MongoDB utilizando MongoDB Compass.
-- Se crea un archivo model.js para el esquema de los productos.
-- Se crea un archivo .env.template para las variables de entorno.
-- Se crea un archivo router.js para las rutas de la API.
-- Se crea un archivo controller.js donde se implementan las rutas RESTful para el manejo de productos.
-- Se crea un archivo service.js donde se implementan las funciones para el manejo de productos, con el objetivo de abstraer la lógica de negocio.
-- Se pueden cargar datos en base desde el archivo assets/data/products.json. De cualquier manera, la base de datos se creará de forma automática al crear un primer producto.
+- Se crea un servidor con **Express** y se definen las rutas RESTful para el manejo de productos.
+- Se crea un archivo **index.js** que es el punto de entrada de la aplicación y además tiene configurado el servidor.
+- Se crea un archivo **dbconnection.js** para la conexión a la base de datos MongoDB.
+- Se puede acceder a la base de datos **MongoDB** utilizando **MongoDB Compass**.
+- Se crea un archivo **model.js** para el esquema de los productos.
+- Se crea un archivo **.env** para las variables de entorno.
+- Se crea un archivo **router.js** para las rutas de la API.
+- Se crea un archivo **controller.js** donde se implementan las rutas RESTful para el manejo de productos.
+- Se crea un archivo **service.js** donde se implementan las funciones para el manejo de productos, con el objetivo de abstraer la lógica de negocio.
+- Se pueden cargar datos en base desde el archivo **assets/data/products.json**. De cualquier manera, la base de datos se creará de forma automática al crear un primer producto.
 - Con la division de responsabilidades de los archivos creados, se logra una arquitectura limpia y mantenible.
-- Se utiliza Postman para probar las rutas.
+- Se utiliza **Postman** para probar las rutas.
 
 ### Capturas de pantallas:
 
