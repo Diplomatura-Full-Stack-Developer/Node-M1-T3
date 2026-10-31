@@ -59,7 +59,7 @@ git clone https://github.com/Diplomatura-Full-Stack-Developer/Node-M1-T3
 npm install
 ```
 
-3. Ejecutar el script:
+3. Ejecutar el script de la aplicación en modo desarrollo:
 
 ```bash
 npm run dev
