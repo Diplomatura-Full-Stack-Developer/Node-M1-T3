@@ -31,19 +31,19 @@ Definir un esquema y realizar operaciones CRUD básicas.
 
 ### Capturas de pantallas:
 
-![MongoDB Compass Connection](./assets/MongoDbCompass.png)
+![MongoDB Compass Connection](./assets/images/MongoDbCompass.png)
 
-![Welcome](./assets/Welcome.png)
+![Welcome](./assets/images/Welcome.png)
 
-![Get Products](./assets/GetAllProducts.png)
+![Get Products](./assets/images/GetAllProducts.png)
 
-![Get Product by ID](./assets/GetProductById.png)
+![Get Product by ID](./assets/images/GetProductById.png)
 
-![Create Product](./assets/CreateProduct.png)
+![Create Product](./assets/images/CreateProduct.png)
 
-![Delete Product](./assets/DeleteProductById.png)
+![Delete Product](./assets/images/DeleteProductById.png)
 
-![Update Product](./assets/UpdateProductById.png)
+![Update Product](./assets/images/UpdateProductById.png)
 
 ### Pasos para la ejecución local:
 
